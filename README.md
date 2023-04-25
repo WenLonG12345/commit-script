@@ -1,34 +1,49 @@
-# cm script
+# CM script
 
 CLI script for linting your commit message 🎉
 
-![demo](./.github/imgs/demo1.jpg)
+![demo](screenshot/screenshot1.png)
 
-## Dev
+## Packages
 
 - zx: https://github.com/google/zx
 - inquirer: https://github.com/SBoudrias/Inquirer.js
 
-## Use
+## Usage
 
+Clone the repo
 
-Install
 ```bash
-pnpm i
-pnpm add zx -g
+git clone git@github.com:WenLonG12345/commit-script.git
 ```
 
-Run
+Open the repo and install packages
+
+```bash
+npm i
+npm i zx -g
+```
+
+Test to run the script
+
 ```bash
 zx commit.js
 ```
 
-Then add the command to your environment variables. If you are using Powershell, you can add the code bellow to `Microsoft.PowerShell_profile.ps1`:
+Then add the command to your environment variables.
+
+- If you are using macOS (zsh), you can add the code below to `zshrc` :
+
 ```bash
-function cm {
-  zx G:\dev\zx\commit.js
+cm () {
+  zx /Users/teowenlong/commit-scripts/commit.js
 }
 ```
 
-Here we go:
-![demo](./.github/imgs/demo2.jpg)
+- If you are using Powershell, please refer to [zx-script](https://github.com/Hacker-C/zx-scripts/tree/main)
+
+## Final Result
+![demo](screenshot/screenshot2.png)
+
+## Reference
+All the credit goes to [zx-scripts](https://github.com/Hacker-C/zx-scripts/tree/main). Since the author only showcase for Powershell, hence I clone the repo and make it suitable for my usecase, and showcase for MacOS usage.
