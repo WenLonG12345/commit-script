@@ -35,8 +35,12 @@ Then add the command to your environment variables.
 - If you are using macOS (zsh), you can add the code below to `zshrc` :
 
 ```bash
-cm () {
-  zx /Users/teowenlong/commit-scripts/commit.js
+## open zshrc
+code ~/.zshrc
+
+## add this function to zshrc
+cm () {  ## cm can be renamed to any name you want
+  zx /Users/teowenlong/commit-scripts/commit.js  ## path to commit.js
 }
 ```
 
