@@ -3,7 +3,7 @@
 import inquirer from 'inquirer'
 
 const EMOJIS = {
-  init: '🎉',
+  // init: '🎉',
   feat: '✨',
   fix: '🐛',
   chore: '🔧',
@@ -23,7 +23,7 @@ const questions = [
     choices: Object.keys(EMOJIS).map((key) => `${EMOJIS[key]} ${key}`)
   },
   {
-    tyoe: 'input',
+    type: 'input',
     name: 'scope',
     message: 'Scope of commit:'
   },
